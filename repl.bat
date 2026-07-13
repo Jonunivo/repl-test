@@ -32,7 +32,7 @@ echo ===========================================
 echo.
 
 REM Aktuelles Datum YYYY-MM-DD erzeugen
-for /f %%i in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd"') do set TODAY=%%i
+for /f %%i in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd_HH-mm"') do set TODAY=%%i
 
 echo Hole aktuelle Branches...
 git fetch origin
